@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="page-shell">
+        
+
+        <!-- BACKGROUND MUSIC -->
+        <audio
+            id="backgroundMusic"
+            preload="auto"
+            autoplay
+            loop
+        >
+            <source
+                src="./audio/background-music.mp3"
+                type="audio/mpeg"
+            >
+        </audio>
+
+        <button
+            id="musicToggle"
+            class="music-toggle"
+            type="button"
+            aria-label="Mute background music"
+            aria-pressed="false"
+            title="Music"
+        >
+            ♪
+        </button>
+
+        <!-- BACKGROUND DECORATION -->
+        <div class="background-art" aria-hidden="true">
+            
+            <img class="background-asset blob blob--one" src="./images/heart-solid-pink.svg" alt="">
+            <img class="background-asset blob blob--four" src="./images/heart-solid-pink.svg" alt="">
+
+            <img class="background-asset frame-heart frame-heart--two" src="./images/heart-outline-lavender.svg" alt="">
+            <img class="background-asset frame-heart frame-heart--three" src="./images/heart-outline-lavender.svg" alt="">
+
+            <img class="background-asset doodle doodle--heart-one" src="./images/heart-outline-muted.svg" alt="">
+            <img class="background-asset doodle doodle--heart-two" src="./images/heart-outline-muted.svg" alt="">
+            <img class="background-asset doodle doodle--heart-three" src="./images/heart-outline-muted.svg" alt="">
+
+            <img class="background-asset doodle doodle--spark-one" src="./images/sparkle-muted.svg" alt="">
+            <img class="background-asset doodle doodle--spark-two" src="./images/sparkle-muted.svg" alt="">
+            <img class="background-asset doodle doodle--spark-three" src="./images/sparkle-muted.svg" alt="">
+        </div>
+
+        <section
+            id="experience"
+            class="experience"
+            data-stage="back"
+            aria-labelledby="pageTitle"
+        >
+            
+            <header class="intro">
+                <h1 id="pageTitle">A Letter For you ♡</h1>
+
+                <p
+                    id="instruction"
+                    class="instruction"
+                    aria-live="polite"
+                >
+                    Click the envelope to turn it around.
+                </p>
+            </header>
+
+            <div id="scene" class="scene" data-stage="back" data-page="front">
+                
+                <!-- ENVELOPE -->
+                <div class="envelope-anchor">
+                    <div class="envelope-float">
+                        <div class="envelope-flip">
+                            
+                            <!-- ENVELOPE BACK -->
+                            <div class="envelope-side envelope-side--back">
+                                <div class="back-paper">
+                                    <p class="back-message">
+                                        <span>From Me</span>
+                                        <span>to you</span>
+                                        <span class="back-heart">♡</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- ENVELOPE FRONT -->
+                            <div class="envelope-side envelope-side--front">
+                                
+                                <div class="envelope-body">
+                                    <img class="envelope-body-asset" src="./images/envelope-body.svg" alt="" aria-hidden="true">
+                                </div>
+
+                                <div id="letterStage" class="letter-stage">
+                                    <div id="letterWrap" class="letter-wrap">
+                                        <div id="letterCard" class="letter-card">
+                                            
+                                            <!-- FIRST PAGE -->
+                                            <article class="letter letter-page letter-page--front" aria-label="Front of the letter">
+                                                <div class="letter-inner">
+                                                    <span class="letter-heart" aria-hidden="true">♡</span>
+
+                                                    <p class="letter-name">Heebin</p>
+
+                                                    <p class="letter-paragraph">
+                                                        I’ve waited long enough for my turn, and I’m not about to let this chance go.
+                                                        Like I’ve said before, my feelings only grow deeper the more I get to know you,
+                                                        and the more I do, the more I find myself wanting more.
+                                                    </p>
+
+                                                    <p class="letter-paragraph">
+                                                        More of us laughing our asses off at the game, more of the stories you tell me
+                                                        about your life, more of hearing your voice and how soft you can be with me,
+                                                        more of those days when it’s just us—more of you.
+                                                    </p>
+
+                                                    <p class="letter-next-note">
+                                                        See next page ♡
+                                                    </p>
+                                                </div>
+                                            </article>
+
+                                            <!-- SECOND PAGE -->
+                                            <article class="letter letter-page letter-page--back" aria-label="Back of the letter">
+                                                <div class="letter-inner letter-inner--back">
+                                                    <p class="letter-paragraph">
+                                                        I’ve been too torpe before, too scared to make a move, too scared to take the leap.
+                                                        You don’t deserve any of that. You deserve a love that is whole, one that doesn’t
+                                                        make you question your worth, doesn’t leave you overthinking, and doesn’t tire you
+                                                        out after a long day.
+                                                    </p>
+
+                                                    <p class="letter-paragraph">
+                                                        I want to do things right. I want us to take our time getting to know each other,
+                                                        learning more about one another. Gusto kong maramdaman mo lahat ng mga bagay na
+                                                        dapat para sa’yo.
+                                                    </p>
+
+                                                    <p class="letter-signoff">Heebin, if you’ll let me,</p>
+
+                                                    <div class="question-block">
+                                                        <span class="question-heart" aria-hidden="true">♡</span>
+                                                        <h2>May I court you?</h2>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pocket-front">
+                                    <img class="pocket-front-asset" src="./images/envelope-pocket-front.svg" alt="" aria-hidden="true">
+                                </div>
+
+                                <div class="flap">
+                                    <img
+                                        class="flap-face flap-face--outside"
+                                        src="./images/envelope-flap-outside.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+
+                                    <img
+                                        class="flap-face flap-face--inside"
+                                        src="./images/envelope-flap-inside.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    >
+                                </div>
+
+                                <img
+                                    class="heart-seal"
+                                    src="./images/heart-seal.svg"
+                                    alt=""
+                                    aria-hidden="true"
+                                >
+                            </div>
+                        </div>
+
+                        <button
+                            id="envelopeTrigger"
+                            class="envelope-trigger"
+                            type="button"
+                            aria-label="Turn the envelope around"
+                        ></button>
+                    </div>
+                </div>
+
+                
+                
+                <!-- NEXT PAGE BUTTON -->
+                <div id="pageFlipControls" class="page-flip-controls">
+                    <button
+                        id="pageFlipButton"
+                        class="page-flip-button"
+                        type="button"
+                        aria-label="Go to the next page of the letter"
+                    >
+                        Next page ♡
+                    </button>
+                </div>
+
+                <!-- YES / NO BUTTONS -->
+                <div id="responseControls" class="response-controls">
+                    <button
+                        id="yesButton"
+                        class="response-button response-button--yes"
+                        type="button"
+                    >
+                        Yes ♡
+                    </button>
+
+                    <button
+                        id="noButton"
+                        class="response-button response-button--no"
+                        type="button"
+                    >
+                        No
+                    </button>
+                </div>
+
+                <p
+                    id="answerMessage"
+                    class="answer-message"
+                    aria-live="polite"
+                ></p>
+
+                <div class="ground-shadow" aria-hidden="true"></div>
+            </div>
+
+            <p class="footer-note">
+               - Maki -
+            </p>
+        </section>
+
+        <div
+            id="celebrationLayer"
+            class="celebration-layer"
+            aria-hidden="true"
+        ></div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
